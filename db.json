@@ -1,0 +1,304 @@
+{
+  "users": {
+    "942691403": {
+      "phone": "942691403",
+      "name": "Administrador MoneyAO",
+      "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+      "inviteCode": "MASTER",
+      "myInviteCode": "AO001",
+      "balance": 25000,
+      "totalInvested": 1000000,
+      "totalEarnings": 0,
+      "registeredAt": "2026-07-01T12:00:00.000Z",
+      "status": "active",
+      "failedAttempts": 0,
+      "lockoutUntil": null,
+      "referredBy": null,
+      "role": "admin"
+    }
+  },
+  "investments": [
+    {
+      "id": "inv_zk1w2x0ni",
+      "phone": "942691403",
+      "productType": "daily",
+      "productId": "AO7",
+      "name": "Plano AO7",
+      "amount": 1000000,
+      "dailyProfit": 100000,
+      "totalProfitEarned": 0,
+      "createdAt": "2026-07-06T22:02:33.356Z",
+      "lastPayoutAt": "2026-07-06T22:02:33.356Z",
+      "status": "pending",
+      "maturityAt": null
+    }
+  ],
+  "deposits": [],
+  "withdrawals": [
+    {
+      "id": "with_hjsb3gzrm",
+      "phone": "942691403",
+      "amount": 10000,
+      "fee": 1500,
+      "netAmount": 8500,
+      "bankName": "BAI",
+      "accountHolder": "Administrador MoneyAO",
+      "iban": "004000007498277510227",
+      "status": "rejected",
+      "createdAt": "2026-07-05T23:14:35.959Z",
+      "processedAt": "2026-07-05T23:15:10.784Z"
+    }
+  ],
+  "commissions": [],
+  "profitLogs": [],
+  "securityLogs": [
+    {
+      "id": "seclog_seed",
+      "phone": "942691403",
+      "action": "SYSTEM_INIT",
+      "details": "Sistema iniciado com administrador oficial pré-semeado (Código: 942691403)",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-01T12:00:00.000Z"
+    },
+    {
+      "id": "log_c7n1az6lk",
+      "phone": "942691403",
+      "action": "LOGIN_FAILED",
+      "details": "Falha de login número 1. IP: 127.0.0.1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-03T03:51:00.000Z"
+    },
+    {
+      "id": "log_pgyeqhoq5",
+      "phone": "942691403",
+      "action": "LOGIN_FAILED",
+      "details": "Falha de login número 2. IP: 127.0.0.1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-03T03:51:00.000Z"
+    },
+    {
+      "id": "log_ejvaghl3f",
+      "phone": "942691403",
+      "action": "LOGIN_FAILED",
+      "details": "Falha de login número 3. IP: 127.0.0.1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-03T03:51:00.000Z"
+    },
+    {
+      "id": "log_ps61lwef4",
+      "phone": "942691403",
+      "action": "FRAUD_PREVENTION",
+      "details": "Tentativa de cadastro com número duplicado do IP 127.0.0.1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-03T03:51:00.000Z"
+    },
+    {
+      "id": "log_e92j403x7",
+      "phone": "942691403",
+      "action": "LOGIN_FAILED",
+      "details": "Falha de login número 4. IP: 127.0.0.1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-03T03:51:00.000Z"
+    },
+    {
+      "id": "log_prj5vnp9b",
+      "phone": "942691403",
+      "action": "LOGIN_FAILED",
+      "details": "Falha de login número 5. IP: 127.0.0.1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-03T03:51:00.000Z"
+    },
+    {
+      "id": "log_ej9rf6qz1",
+      "phone": "942691403",
+      "action": "ACCOUNT_LOCKOUT",
+      "details": "Conta bloqueada temporariamente até 2026-07-03T04:06:00.000Z devido a 5 tentativas de login incorretas",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-03T03:51:00.000Z"
+    },
+    {
+      "id": "log_t4ev3lc2j",
+      "phone": "942691403",
+      "action": "LOGIN_SUCCESS",
+      "details": "Login efetuado com sucesso do IP 127.0.0.1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-05T20:06:48.618Z"
+    },
+    {
+      "id": "log_ro9y9qytp",
+      "phone": "942691403",
+      "action": "LOGIN_SUCCESS",
+      "details": "Login efetuado com sucesso do IP 127.0.0.1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-05T20:59:34.036Z"
+    },
+    {
+      "id": "log_xhw7lwoui",
+      "phone": "942691403",
+      "action": "LOGIN_SUCCESS",
+      "details": "Login efetuado com sucesso do IP 127.0.0.1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-05T21:09:23.105Z"
+    },
+    {
+      "id": "log_uqynrwz32",
+      "phone": "942691403",
+      "action": "GIFT_CODE_CREATED",
+      "details": "Código de presente \"AO-FT2\" no valor de 10000 Kz criado (Máx usos: 1).",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-05T21:10:08.389Z"
+    },
+    {
+      "id": "log_hxijr17a0",
+      "phone": "942691403",
+      "action": "GIFT_CODE_REDEEMED",
+      "details": "Código de presente \"AO-FT2\" resgatado com sucesso! Valor adicionado: 10000 Kz.",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-05T21:10:30.503Z"
+    },
+    {
+      "id": "log_5l63ajzil",
+      "phone": "942691403",
+      "action": "LOGIN_SUCCESS",
+      "details": "Login efetuado com sucesso do IP 127.0.0.1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-05T21:13:42.028Z"
+    },
+    {
+      "id": "log_g8uk6ef91",
+      "phone": "942691403",
+      "action": "LOGIN_SUCCESS",
+      "details": "Login efetuado com sucesso do IP 127.0.0.1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-05T21:19:58.145Z"
+    },
+    {
+      "id": "log_exbqq66np",
+      "phone": "942691403",
+      "action": "LOGIN_SUCCESS",
+      "details": "Login efetuado com sucesso do IP 127.0.0.1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-05T22:31:48.537Z"
+    },
+    {
+      "id": "log_heimy0x67",
+      "phone": "942691403",
+      "action": "LOGIN_SUCCESS",
+      "details": "Login efetuado com sucesso do IP 127.0.0.1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-05T23:13:58.701Z"
+    },
+    {
+      "id": "log_7xm0xpnka",
+      "phone": "942691403",
+      "action": "WITHDRAWAL_SUBMITTED",
+      "details": "Solicitação de saque de 10000 Kz submetida (Taxa 15%: 1500 Kz, Líquido: 8500 Kz). Banco: BAI. IBAN: 004000007498277510227",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-05T23:14:35.959Z"
+    },
+    {
+      "id": "log_1cfh92c1l",
+      "phone": "942691403",
+      "action": "WITHDRAWAL_REJECTED",
+      "details": "Levantamento de 10000 Kz rejeitado. Valor devolvido ao saldo disponível.",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-05T23:15:10.784Z"
+    },
+    {
+      "id": "log_czhhy8yie",
+      "phone": "942691403",
+      "action": "GIFT_CODE_CREATED",
+      "details": "Código de presente \"AO-2ARTM\" no valor de 1000000 Kz criado (Máx usos: 1).",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-05T23:17:01.064Z"
+    },
+    {
+      "id": "log_cwe3gtigc",
+      "phone": "942691403",
+      "action": "GIFT_CODE_REDEEMED",
+      "details": "Código de presente \"AO-2ARTM\" resgatado com sucesso! Valor adicionado: 1000000 Kz.",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-05T23:17:18.362Z"
+    },
+    {
+      "id": "log_39vmnx4fd",
+      "phone": "942691403",
+      "action": "LOGIN_SUCCESS",
+      "details": "Login efetuado com sucesso do IP 127.0.0.1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-06T20:27:16.538Z"
+    },
+    {
+      "id": "log_vxid5424h",
+      "phone": "942691403",
+      "action": "LOGIN_SUCCESS",
+      "details": "Login efetuado com sucesso do IP 127.0.0.1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-06T21:17:25.375Z"
+    },
+    {
+      "id": "log_hk6ll4023",
+      "phone": "942691403",
+      "action": "LOGIN_SUCCESS",
+      "details": "Login efetuado com sucesso do IP 127.0.0.1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-06T21:29:45.734Z"
+    },
+    {
+      "id": "log_lehevdo2p",
+      "phone": "942691403",
+      "action": "LOGIN_SUCCESS",
+      "details": "Login efetuado com sucesso do IP 127.0.0.1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-06T21:46:00.206Z"
+    },
+    {
+      "id": "log_j2hgbeqtm",
+      "phone": "942691403",
+      "action": "INVESTMENT_BUY_DAILY_PENDING",
+      "details": "Plano AO7 comprado. Aguardando ativação manual pelo gerente administrador.",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-06T22:02:33.356Z"
+    },
+    {
+      "id": "log_rcb06pspm",
+      "phone": "942691403",
+      "action": "LOGIN_SUCCESS",
+      "details": "Login efetuado com sucesso do IP 127.0.0.1",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-07-06T22:11:37.373Z"
+    }
+  ],
+  "simulatedTime": "2026-07-06T22:16:44.277Z",
+  "recoveryRequests": [],
+  "timeOffsetMs": 0,
+  "autoProfitPayout": true,
+  "giftCodes": [
+    {
+      "id": "gift_b4jjaceho",
+      "code": "AO-FT2",
+      "amount": 10000,
+      "maxUses": 1,
+      "usesCount": 1,
+      "usedBy": [
+        "942691403"
+      ],
+      "createdAt": "2026-07-05T21:10:08.389Z",
+      "createdBy": "942691403",
+      "status": "inactive"
+    },
+    {
+      "id": "gift_9ll1fxkgb",
+      "code": "AO-2ARTM",
+      "amount": 1000000,
+      "maxUses": 1,
+      "usesCount": 1,
+      "usedBy": [
+        "942691403"
+      ],
+      "createdAt": "2026-07-05T23:17:01.064Z",
+      "createdBy": "942691403",
+      "status": "inactive"
+    }
+  ]
+}

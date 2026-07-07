@@ -1,0 +1,79 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Utilizador da plataforma MoneyAO",
+      "type": "object",
+      "properties": {
+        "phone": { "type": "string" },
+        "name": { "type": "string" },
+        "passwordHash": { "type": "string" },
+        "inviteCode": { "type": "string" },
+        "myInviteCode": { "type": "string" },
+        "balance": { "type": "number" },
+        "totalInvested": { "type": "number" },
+        "totalEarnings": { "type": "number" },
+        "registeredAt": { "type": "string", "format": "date-time" },
+        "status": { "type": "string", "enum": ["active", "blocked"] },
+        "failedAttempts": { "type": "number" },
+        "lockoutUntil": { "type": "string" },
+        "referredBy": { "type": "string" },
+        "role": { "type": "string", "enum": ["user", "admin"] }
+      },
+      "required": ["phone", "name", "passwordHash", "registeredAt", "status", "role"]
+    },
+    "Investment": {
+      "title": "Investment",
+      "description": "Investimento de um utilizador em um plano",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "phone": { "type": "string" },
+        "productId": { "type": "string" },
+        "productName": { "type": "string" },
+        "productType": { "type": "string" },
+        "amount": { "type": "number" },
+        "dailyProfit": { "type": "number" },
+        "totalReturnExpected": { "type": "number" },
+        "durationDays": { "type": "number" },
+        "daysElapsed": { "type": "number" },
+        "totalEarned": { "type": "number" },
+        "status": { "type": "string", "enum": ["active", "matured"] },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "lastPayoutAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "phone", "productId", "amount", "status", "createdAt"]
+    },
+    "Deposit": {
+      "title": "Deposit",
+      "description": "Depósito feito por um utilizador",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "phone": { "type": "string" },
+        "amount": { "type": "number" },
+        "method": { "type": "string" },
+        "status": { "type": "string", "enum": ["pending", "approved", "rejected"] },
+        "proofUrl": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "processedAt": { "type": "string" },
+        "rejectionReason": { "type": "string" }
+      },
+      "required": ["id", "phone", "amount", "method", "status", "createdAt"]
+    }
+  },
+  "firestore": {
+    "users": {
+      "schema": "User",
+      "description": "Coleção de utilizadores indexada por telefone"
+    },
+    "investments": {
+      "schema": "Investment",
+      "description": "Coleção de planos de investimento ativos e finalizados"
+    },
+    "deposits": {
+      "schema": "Deposit",
+      "description": "Coleção de solicitações de depósitos de fundos"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "MoneyAO",
+  "description": "Plataforma profissional de investimentos em Angola com rendimento diário, fundos a prazo e programa de afiliados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

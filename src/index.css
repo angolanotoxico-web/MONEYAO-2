@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+/* Light Theme Variables & Overrides */
+html.light, .light-theme {
+  --theme-bg-950: #f8fafc; /* bg-slate-950 becomes light slate-50 */
+  --theme-bg-900: #ffffff; /* bg-slate-900 becomes pure white */
+  --theme-border-800: #e2e8f0; /* border-slate-800 becomes light slate-200 */
+  --theme-text-100: #0f172a; /* text-slate-100 and text-white become deep charcoal */
+  --theme-text-200: #1e293b; /* text-slate-200 */
+  --theme-text-300: #334155; /* text-slate-300 */
+  --theme-text-400: #475569; /* text-slate-400 */
+  --theme-text-500: #64748b; /* text-slate-500 */
+  --theme-bg-800: #f1f5f9; /* bg-slate-800 becomes light slate-100 */
+  --theme-bg-950-80: rgba(241, 245, 249, 0.85);
+  --theme-bg-900-95: rgba(255, 255, 255, 0.98);
+  --theme-bg-900-80: rgba(255, 255, 255, 0.85);
+}
+
+/* Intercept backgrounds */
+html.light .bg-slate-950,
+.light-theme .bg-slate-950 {
+  background-color: var(--theme-bg-950) !important;
+}
+html.light .bg-slate-900,
+.light-theme .bg-slate-900 {
+  background-color: var(--theme-bg-900) !important;
+}
+html.light .bg-slate-900\/95,
+.light-theme .bg-slate-900\/95 {
+  background-color: var(--theme-bg-900-95) !important;
+}
+html.light .bg-slate-900\/80,
+.light-theme .bg-slate-900\/80 {
+  background-color: var(--theme-bg-900-80) !important;
+}
+html.light .bg-slate-950\/80,
+.light-theme .bg-slate-950\/80 {
+  background-color: var(--theme-bg-950-80) !important;
+}
+html.light .bg-slate-950\/85,
+.light-theme .bg-slate-950\/85 {
+  background-color: rgba(241, 245, 249, 0.85) !important;
+}
+html.light .bg-slate-950\/40,
+.light-theme .bg-slate-950\/40 {
+  background-color: rgba(241, 245, 249, 0.4) !important;
+}
+html.light .bg-slate-900\/30,
+.light-theme .bg-slate-900\/30 {
+  background-color: rgba(241, 245, 249, 0.3) !important;
+}
+html.light .bg-slate-900\/40,
+.light-theme .bg-slate-900\/40 {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+html.light .bg-slate-900\/20,
+.light-theme .bg-slate-900\/20 {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+html.light .bg-slate-900\/60,
+.light-theme .bg-slate-900\/60 {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+html.light .bg-slate-800,
+.light-theme .bg-slate-800 {
+  background-color: var(--theme-bg-800) !important;
+}
+html.light .bg-slate-800\/50,
+.light-theme .bg-slate-800\/50 {
+  background-color: rgba(241, 245, 249, 0.5) !important;
+}
+html.light .bg-slate-950\/60,
+.light-theme .bg-slate-950\/60 {
+  background-color: rgba(241, 245, 249, 0.6) !important;
+}
+
+/* Intercept borders */
+html.light .border-slate-800,
+.light-theme .border-slate-800 {
+  border-color: var(--theme-border-800) !important;
+}
+html.light .border-slate-800\/80,
+.light-theme .border-slate-800\/80 {
+  border-color: rgba(226, 232, 240, 0.8) !important;
+}
+html.light .border-slate-800\/60,
+.light-theme .border-slate-800\/60 {
+  border-color: rgba(226, 232, 240, 0.6) !important;
+}
+html.light .border-slate-800\/20,
+.light-theme .border-slate-800\/20 {
+  border-color: rgba(226, 232, 240, 0.2) !important;
+}
+html.light .border-slate-700,
+.light-theme .border-slate-700 {
+  border-color: #cbd5e1 !important;
+}
+html.light .border-slate-900,
+.light-theme .border-slate-900 {
+  border-color: #f1f5f9 !important;
+}
+
+/* Intercept text colors */
+html.light .text-slate-100,
+html.light .text-white,
+.light-theme .text-slate-100,
+.light-theme .text-white {
+  color: var(--theme-text-100) !important;
+}
+html.light .text-slate-200,
+.light-theme .text-slate-200 {
+  color: var(--theme-text-200) !important;
+}
+html.light .text-slate-300,
+.light-theme .text-slate-300 {
+  color: var(--theme-text-300) !important;
+}
+html.light .text-slate-400,
+.light-theme .text-slate-400 {
+  color: var(--theme-text-400) !important;
+}
+html.light .text-slate-500,
+.light-theme .text-slate-500 {
+  color: var(--theme-text-500) !important;
+}
+html.light .text-slate-600,
+.light-theme .text-slate-600 {
+  color: #64748b !important;
+}
+
+/* Form inputs & buttons placeholder/borders */
+html.light input::placeholder,
+.light-theme input::placeholder {
+  color: #94a3b8 !important;
+}
+
+html.light input,
+.light-theme input {
+  color: #0f172a !important;
+}
+
+/* Hover effects */
+html.light .hover\:bg-slate-800:hover,
+.light-theme .hover\:bg-slate-800:hover {
+  background-color: #cbd5e1 !important;
+}
+html.light .hover\:bg-slate-800\/50:hover,
+.light-theme .hover\:bg-slate-800\/50:hover {
+  background-color: rgba(226, 232, 240, 0.5) !important;
+}
+html.light .hover\:text-white:hover,
+.light-theme .hover\:text-white:hover {
+  color: #0f172a !important;
+}
+
+/* Custom chart element styles for Light Theme */
+html.light .recharts-cartesian-axis-tick text,
+.light-theme .recharts-cartesian-axis-tick text {
+  fill: #475569 !important;
+}
+
+html.light .recharts-legend-item-text,
+.light-theme .recharts-legend-item-text {
+  color: #1e293b !important;
+}
